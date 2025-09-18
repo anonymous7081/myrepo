@@ -13,9 +13,10 @@ public class test {
     } */
    test(int a){
         System.out.println(" this is a parameterized constructer");
+        
    }
    public static void main(String[] args) {
     test t = new test(10);
-    
+    System.err.println(t);
    }
 }
