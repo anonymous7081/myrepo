@@ -12,19 +12,21 @@ class Animal {
         Animal cat = new Animal();
         cat.run(); 
         HelperClass hc = new HelperClass();
-        System.out.println(hc.greet());
+        hc.greet();
         AnotherClass ac = new AnotherClass();
         ac.printMessage();
+        ac.eat();
+        hc.run();
     }
 
 }
-class HelperClass {
-    public String greet() {
-        return "Hello from HelperClass!";
+class HelperClass extends Animal{
+    public void greet() {
+        System.out.println("Hello from HelperClass!");
     }
 }
 
-class AnotherClass {
+class AnotherClass extends Animal{
     public void printMessage() {
         System.out.println("This is AnotherClass.");
     }

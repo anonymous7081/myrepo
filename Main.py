@@ -1,1 +1,0 @@
-print("ekdc xdkcn ,cdx");
